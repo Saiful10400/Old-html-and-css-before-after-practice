@@ -1,0 +1,73 @@
+.main{
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    margin:100px auto;
+    position:relative;
+}
+
+.hover-div{
+    height: 0;
+    width: 0;
+    background-image: url(http://picsum.photos/100);
+    background-size:cover;
+    transition: .5s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    text-align: center;
+    opacity: 0;
+}
+.hover-div h2{
+    background-color: rgb(3, 156, 3,0.7);
+    margin-top: 40px;
+
+}
+.main:hover .hover-div{
+    visibility: visible;
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+}
+
+
+/* this is parent div */
+.parent {
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+    text-align: center;
+
+}
+.parent a{
+    background-color: green;
+    text-decoration: none;
+    display:inline-block;
+    padding: 10px 30px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 80px;
+    position: relative;
+    z-index: 1;
+    border-radius: 10px;
+
+}
+
+.parent a::after{
+    content: " ";
+    background-color: red;
+    height: 100%;
+    width: 0%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 10px;
+    transition: .5s;
+}
+
+.parent a:hover::after{
+
+    width: 100%;
+}

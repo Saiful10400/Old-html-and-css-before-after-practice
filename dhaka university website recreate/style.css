@@ -1,0 +1,199 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.foat-fix::before{
+    content: '';
+    clear: both;
+    display: block;
+
+}
+
+.land{
+    width: 95%;
+    height: 1425px;
+    border: 1px solid black;
+    margin: auto;
+    margin-bottom:300px;
+    margin-top: 10px;
+}
+
+.header{
+    height: 100px;
+    width: 100%;
+}
+
+.logo{
+    height: 100%;
+    width: 30%;
+    background-color: #7e7e7e;
+    float: left;
+    position: relative;
+}
+
+.logo img{
+    max-height: 100%;
+}
+
+.logo h1 {
+    position: absolute;
+    top: 11px;
+    right: 54px;
+    font-size: 33px;
+    color: #312783;
+}
+
+.logo h4 {
+    position: absolute;
+    top: 54px;
+    right: 162px;
+    color: #312783;
+}
+
+/* THIS IS MENU CSS START. */
+.menu{
+    height: 100%;
+    width: 70%;
+    background-color: #002147;
+    float: right;
+}
+
+.menu ul{
+    list-style: none;
+
+}
+
+.menu ul li {
+    float: left;
+    margin: 10px;
+    text-decoration: none;
+    position: relative;
+    top: 20px;
+    right: -228px;
+    /* padding: 20px; */
+}
+.menu ul li a{
+    font-size: 20px;
+    text-decoration: none;
+    color: #ffb606;
+}
+
+/* menu hover */
+.menu ul li a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+.content{
+    height: 550px;
+    width: 100%;
+    background-image: url(https://ssl.du.ac.bd/fontView/images/slider/1611239046160879570857.jpg);
+    background-size: cover;
+    text-align: center;
+}
+
+.content .overlay{
+    display: inline-block;
+    background-color:rgb(7, 7, 7,0.5);
+    height: 425px;
+    width: 1515px;
+    margin-top: 60px;
+    border-radius: 10px;
+}
+
+.content .overlay h1 {
+    margin-top: 182px;
+    font-size: 64px;
+    color: rgba(255, 255, 255, 0.733);
+}
+/* asset start from here. */
+
+.asset{
+    height: 750px;
+    width: 100%;
+}
+
+.vc{
+    height: 100%;
+    width: 80%;
+    background-color: #95a5a6;
+    float: left;
+
+}
+.vcimg {
+    height: 300px;
+    width: 250px;
+    border: 2px solid white;
+    margin: 28px 64px;
+    background-color: white;
+    text-align: center;
+    display: inline-block;
+    float: left;
+    margin-right: 11px;
+    margin-top: 21px;
+    margin-bottom: 8px;
+}
+.vc p {
+    color: black;
+    font-size: 18px;
+    margin-top: 19px;
+}
+.vcimg h3{
+    font-size: 18px;
+    display: inline-block;
+
+    
+}
+.akter{
+   
+   height: 280px;
+   width: 250px;
+   object-fit: cover;
+   
+}
+
+.notice{
+    background-color: #7f8c8d;
+    height: 100%;
+    width: 20%;
+    float: right;
+}
+
+.notice{
+    position: relative;
+}
+.notice ul {
+    width: 90%;
+    margin-left: 42px;
+    margin-top: 176px;
+}
+.notice ul li {
+    margin-top: 20px;
+}
+.notice ul li a{
+    text-decoration: none;
+    color: white;
+}
+.notice ul li a:hover{
+    color: #b9f1ff;
+    text-decoration: underline;
+}
+.notice h1 {
+    text-decoration: underline;
+    color: white;
+    position: absolute;
+    top: 93px;
+    right: 133px;
+}
+.copyright p{
+    display: inline-block;
+    color: white;
+    margin-top: 5px;
+}
+.copyright{
+    text-align: center;
+    background-color: #353b48;
+    height: 30px;
+    width: 100%;
+}
